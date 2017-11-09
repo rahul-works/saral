@@ -16,7 +16,7 @@ class Controller_Welcome extends Controller {
     public function action_test(){
         echo 'i m here '; die;
     }
+    
+    
 
-   
-    }
 } // End Welcome

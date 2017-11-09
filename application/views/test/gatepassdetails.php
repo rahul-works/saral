@@ -23,13 +23,13 @@
       <div class="row">
         <div class="col-md-3 mb-3">
           <div class="input-group date">
-            <span class="input-group-addon" id="basic-addon1">from</span>
+            <span class="input-group-addon" id="basic-addon1">in</span>
             <input type="label" class="form-control bg-color-white" id="fromdate" name="fromdate" value="<?php echo $details['fromdate']; ?>"  disabled >
           </div>      
         </div>
         <div class="col-md-3 mb-3">
           <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1">till</span>
+            <span class="input-group-addon" id="basic-addon1">out</span>
             <input type="label" class="form-control bg-color-white" id="todate" name="todate" value="<?php echo $details['todate']; ?>"  disabled >
           </div>
         </div>

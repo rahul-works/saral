@@ -5,25 +5,21 @@
     <?php echo $nav_header; ?>
     
     <div class="clear" />
-    <form class="container" id="needs-validation" novalidate action="/test/save_tent_form" method="post" > 
+    <form class="container" id="needs-validation" novalidate action="/Delhi/save_tent_form" method="post" > 
       <div class="row">
         <div class="col-md-6 mb-3">
-          
-<!--          <label for="validationCustom01">First name</label>-->
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">@</span>
             <input type="text" class="form-control" id="fname" placeholder="First name" name="fname" value="" pattern="[A-Za-z]+" required>
           </div>
         </div>
         <div class="col-md-3 mb-3">
-<!--          <label for="validationCustom02">Last name</label>-->
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">@</span>
             <input type="text" class="form-control" id="lname" placeholder="Last name" name="lname" value="" pattern="[A-Za-z]+" required>
           </div>
         </div>
         <div class="col-md-3 mb-3">
-<!--          <label for="validationCustom02">tent #</label>-->
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">#</span>
             <input type="text" class="form-control" id="tent" placeholder="tent #" name="tent" value="" pattern="[A-Za-z0-9]+" required>
@@ -32,21 +28,18 @@
       </div>
       <div class="row">
         <div class="col-md-3 mb-3">
-<!--          <label for="validationCustom01">From date</label>-->
           <div class="input-group date">
-            <span class="input-group-addon" id="basic-addon1">D</span>
+            <span class="input-group-addon" id="basic-addon1">in</span>
             <input type="date" class="form-control" id="fromdate" placeholder="from date" name="fromdate" value="" min='2017-11-07' max='2017-11-13' required>
           </div>      
         </div>
         <div class="col-md-3 mb-3">
-<!--          <label for="validationCustom02">To date</label>-->
           <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1">D</span>
+            <span class="input-group-addon" id="basic-addon1">out</span>
             <input type="date" class="form-control" id="todate" placeholder="to date" name="todate" value="" min='2017-11-07' max='2017-11-13' required>
           </div>
         </div>
         <div class="col-md-6 mb-3">
-<!--          <label for="validationCustom03">mobile #</label>-->
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">#</span>
             <input type="text" class="form-control" id="mobile" placeholder="mobile #" name="mobile" pattern="[0-9]+"required>
@@ -59,7 +52,6 @@
         
       <div class="row">
         <div class="col-md-3 mb-3">
-<!--          <label for="validationCustom01">State</label>-->
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">S</span>
               <select class="form-control" name="state" >
@@ -100,11 +92,9 @@
                   <option value="Lakshadeep" >Lakshadeep</option>
                   <option value="Pondicherry" >Pondicherry</option>
               </select>
-<!--          <input type="text" class="form-control" id="validationCustom01" placeholder="state" name="state" value="" required>-->
             </div>
         </div>
         <div class="col-md-3 mb-3">
-<!--          <label for="validationCustom03">zone</label>-->
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">@</span>
               <input type="text" class="form-control" id="zone" placeholder="zone" name="zone" pattern="[A-Za-z0-9]+" required>
@@ -114,7 +104,6 @@
           </div>
         </div>
         <div class="col-md-3 mb-3">
-<!--          <label for="validationCustom04">Branch</label>-->
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">@</span>
               <input type="text" class="form-control" id="branch" placeholder="Branch" name="branch" pattern="[A-Za-z0-9]+" required>
@@ -124,7 +113,6 @@
           </div>
         </div>
         <div class="col-md-3 mb-3">
-<!--          <label for="validationCustom05">Unit</label>-->
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">@</span>
               <input type="text" class="form-control" id="unit" placeholder="Unit" name="unit" pattern="[A-Za-z0-9]+" required>
@@ -136,14 +124,12 @@
       </div>
       <div class="row">
         <div class="col-md-6 mb-3">
-<!--          <label for="validationCustom01">Luggage</label>-->
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">@</span>
             <input type="text" class="form-control" id="luggage" placeholder="Luggage" name="luggage" pattern="[a-zA-Z0-9-_. ,]+" value="" required>
           </div>
         </div>
         <div class="col-md-6 mb-3">
-<!--          <label for="validationCustom02">Sewadal Adhikari Name</label>-->
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">@</span>
             <input type="text" class="form-control" id="adhikari" placeholder="Sewadal Adhikari Name" name="adhikari" value="" pattern="[A-Za-z]+" required>

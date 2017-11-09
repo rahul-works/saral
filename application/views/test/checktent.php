@@ -5,7 +5,7 @@
     <?php echo $nav_header; ?>
     
     <div class="clear" />
-    <form class="container" id="needs-validation" novalidate action="/test/tent_entry_result" method="post" > 
+    <form class="container" id="needs-validation" novalidate action="/Delhi/tent_entry_result" method="post" > 
       <div class="row">
         <div class="col-md-6 mb-3">
           <div class="input-group">
