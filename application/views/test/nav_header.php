@@ -12,15 +12,15 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item <?php if(isset($type) && $type=='1') { echo "active"; } ?>">
-              <a class="nav-link" href="tent_form">Home
+              <a class="nav-link" href="/Delhi/tent_form">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item <?php if(isset($type) && $type=='2') { echo 'active'; } ?>">
-              <a class="nav-link" href="check_tent">Check</a>
+              <a class="nav-link" href="/Delhi/check_tent">Check</a>
             </li>
             <li class="nav-item <?php if(isset($type) && $type=='3') { echo 'active'; } ?>">
-              <a class="nav-link" href="contact">Contact</a>
+              <a class="nav-link" href="/Delhi/contact">Contact</a>
             </li>
           </ul>
         </div>

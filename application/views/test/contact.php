@@ -6,7 +6,9 @@
     
     <div class="clear" />
     <div class="container"> 
-      <p class="italic">+91 7259378545</p>
+    <br />
+      <p class="italic" style="color:green"><b>+91 7259378545</b></p>
+      <p class="italic" style="color:green"><b>contact@saralkarya.com</b></p>
     </div>
 
 
