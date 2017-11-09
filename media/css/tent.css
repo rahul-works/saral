@@ -1,0 +1,23 @@
+.fleft{
+    float:left;
+}
+.padding{
+    padding-top: 6% !important;
+}
+.padding-form{
+    padding-top: 6% !important;
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 1024px) {
+    .padding {
+        padding-top: 20% !important;
+    }
+}
+
+p.italic {
+    font-style: italic;
+}
+
+.bg-color-white{
+    background-color: #FFFFFF !important;
+}
