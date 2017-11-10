@@ -8,7 +8,7 @@
     <div class="container"> 
     <br />
       <p class="italic" style="color:green"><b>+91 7259378545</b></p>
-      <p class="italic" style="color:green"><b>contact@saralkarya.com</b></p>
+      <p class="italic" style="color:green"><a href="mailto:contact@saralkarya.com"><img src='/media/images/sewa/gemailicon.png' class="img-responsive pad-top-loggo-left-10 " alt="Home"><b style='color:green;'>contact@saralkarya.com</b></a></p>
     </div>
 
 

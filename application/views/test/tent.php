@@ -30,22 +30,24 @@
         <div class="col-md-3 mb-3">
           <div class="input-group date">
             <span class="input-group-addon" id="basic-addon1">in</span>
-            <input type="date" class="form-control" id="fromdate" placeholder="from date" name="fromdate" value="" min='2017-11-07' max='2017-11-13' required>
+            <input type="date" class="form-control" id="fromdate" placeholder="from date" name="fromdate" value="" min='2017-11-01' max='2017-11-30' required>
           </div>      
         </div>
         <div class="col-md-3 mb-3">
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">out</span>
-            <input type="date" class="form-control" id="todate" placeholder="to date" name="todate" value="" min='2017-11-07' max='2017-11-13' required>
+            <input type="date" class="form-control" id="todate" placeholder="to date" name="todate" value="" min='2017-11-01' max='2017-11-30' required>
           </div>
         </div>
         <div class="col-md-6 mb-3">
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">#</span>
             <input type="text" class="form-control" id="mobile" placeholder="mobile #" name="mobile" pattern="[0-9]+"required>
+<!--
               <div class="invalid-feedback">
                 Please provide a valid mobile #.
               </div>
+-->
           </div>
         </div>
       </div>
@@ -98,27 +100,33 @@
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">@</span>
               <input type="text" class="form-control" id="zone" placeholder="zone" name="zone" pattern="[A-Za-z0-9]+" required>
+<!--
               <div class="invalid-feedback">
-                Please provide a valid zone information.
+                Please provide a valid zone.
               </div>
+-->
           </div>
         </div>
         <div class="col-md-3 mb-3">
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">@</span>
               <input type="text" class="form-control" id="branch" placeholder="Branch" name="branch" pattern="[A-Za-z0-9]+" required>
+<!--
               <div class="invalid-feedback">
                 Please provide a valid branch.
               </div>
+-->
           </div>
         </div>
         <div class="col-md-3 mb-3">
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">@</span>
               <input type="text" class="form-control" id="unit" placeholder="Unit" name="unit" pattern="[A-Za-z0-9]+" required>
+<!--
               <div class="invalid-feedback">
                 Please provide a valid unit.
               </div>
+-->
           </div>
         </div>
       </div>
@@ -127,6 +135,11 @@
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">@</span>
             <input type="text" class="form-control" id="luggage" placeholder="Luggage" name="luggage" pattern="[a-zA-Z0-9-_. ,]+" value="" required>
+<!--
+            <div class="invalid-feedback">
+            Please provide a valid unit.
+          </div>
+-->
           </div>
         </div>
         <div class="col-md-6 mb-3">
