@@ -56,7 +56,7 @@
         <div class="col-md-3 mb-3">
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">S</span>
-              <select class="form-control" name="state" >
+              <select class="form-control" name="state" required>
                   <option value="" selected disabled>State</option>
                   <option value="Andhra Pradesh" >Andhra Pradesh</option>
                   <option value="Arunachal Pradesh" >Arunachal Pradesh</option>
@@ -145,7 +145,7 @@
         <div class="col-md-6 mb-3">
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">@</span>
-            <input type="text" class="form-control" id="adhikari" placeholder="Sewadal Adhikari Name" name="adhikari" value="" pattern="[A-Za-z]+" required>
+            <input type="text" class="form-control" id="adhikari" placeholder="Sewadal Adhikari Name" name="adhikari" value="" pattern="[a-zA-Z0-9-_. ,]+" required>
           </div>
         </div>
       </div>
