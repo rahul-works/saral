@@ -42,7 +42,7 @@
         <div class="col-md-6 mb-3">
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">#</span>
-            <input type="text" class="form-control" id="mobile" placeholder="mobile #" name="mobile" pattern="[0-9]+"required>
+            <input type="text" class="form-control" id="mobile" placeholder="mobile #" name="mobile" pattern="[0-9]{10}"required>
 <!--
               <div class="invalid-feedback">
                 Please provide a valid mobile #.
@@ -53,7 +53,7 @@
       </div>
         
       <div class="row">
-        <div class="col-md-3 mb-3">
+        <div class="col-md-6 mb-3">
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">S</span>
               <select class="form-control" name="state" required>
@@ -96,17 +96,7 @@
               </select>
             </div>
         </div>
-        <div class="col-md-3 mb-3">
-          <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1">@</span>
-              <input type="text" class="form-control" id="zone" placeholder="zone" name="zone" pattern="[A-Za-z0-9]+" required>
-<!--
-              <div class="invalid-feedback">
-                Please provide a valid zone.
-              </div>
--->
-          </div>
-        </div>
+        
         <div class="col-md-3 mb-3">
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">@</span>
@@ -121,10 +111,10 @@
         <div class="col-md-3 mb-3">
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">@</span>
-              <input type="text" class="form-control" id="unit" placeholder="Unit" name="unit" pattern="[A-Za-z0-9]+" required>
+              <input type="text" class="form-control" id="zone" placeholder="zone" name="zone" pattern="[A-Za-z0-9]+" required>
 <!--
               <div class="invalid-feedback">
-                Please provide a valid unit.
+                Please provide a valid zone.
               </div>
 -->
           </div>
@@ -145,12 +135,35 @@
         <div class="col-md-6 mb-3">
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">@</span>
-            <input type="text" class="form-control" id="adhikari" placeholder="Sewadal Adhikari Name" name="adhikari" value="" pattern="[a-zA-Z0-9-_. ,]+" required>
+            <input type="text" class="form-control" id="totalmp" placeholder="Total number of Saints" name="totalmp" pattern="[0-9]+" value="" required>
+<!--
+            <div class="invalid-feedback">
+            Please provide a valid unit.
+          </div>
+-->
           </div>
         </div>
       </div>
+      
       <button class="btn btn-primary" type="submit">Submit form</button>
+      
+      <div class="row padding12px">
+        <div class="col-md-6 mb-3">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">adhikari name</span>
+            <input type="label" class="form-control bg-color-white" id="adhikari" name="adhikari" value="<?php echo $_SESSION['adhikari']; ?>" readonly>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">unit number</span>
+              <input type="label" class="form-control bg-color-white" id="unit" name="unit" value="<?php echo $_SESSION['unit']; ?>" readonly>
+          </div>
+        </div>
+      </div>
     </form>
+    
+    
 
 <?php echo $footer; ?>
   </body>

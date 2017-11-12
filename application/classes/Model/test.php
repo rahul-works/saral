@@ -19,7 +19,7 @@ class Model_Test extends Model_Database {
     public function save_tent(){
         // check if anything same is insert if yes then return the number again
         if(isset($_POST) && isset($_POST['fname'])){
-            $sql = 'INSERT INTO tent(firstname, lastname, tent, fromdate, todate, mobile, state, zone, branch, unit, luggage, adhikari, created_date) VALUES ("'.$_POST['fname'].'", "'.$_POST['lname'].'", "'.$_POST['tent'].'", "'.$_POST['fromdate'].'", "'.$_POST['todate'].'", "'.$_POST['mobile'].'", "'.$_POST['state'].'", "'.$_POST['zone'].'", "'.$_POST['branch'].'", "'.$_POST['unit'].'", "'.$_POST['luggage'].'", "'.$_POST['adhikari'].'", NOW())';    
+            $sql = 'INSERT INTO tent(firstname, lastname, tent, fromdate, todate, mobile, state, zone, branch, unit, luggage, adhikari, totalmp, created_date) VALUES ("'.$_POST['fname'].'", "'.$_POST['lname'].'", "'.$_POST['tent'].'", "'.$_POST['fromdate'].'", "'.$_POST['todate'].'", "'.$_POST['mobile'].'", "'.$_POST['state'].'", "'.$_POST['zone'].'", "'.$_POST['branch'].'", "'.$_POST['unit'].'", "'.$_POST['luggage'].'", "'.$_POST['adhikari'].'", "'.$_POST['totalmp'].'", NOW())';    
             $entry_id = $this->_db->query(Database::INSERT, $sql, False);
             return $entry_id[0];
         } else {

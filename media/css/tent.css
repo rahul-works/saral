@@ -1,6 +1,9 @@
 .fleft{
     float:left;
 }
+.padding12px{
+    padding-top: 12px !important;
+}
 .padding{
     padding-top: 6% !important;
 }

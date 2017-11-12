@@ -7,10 +7,16 @@
     <?php if(isset($details)) { ?>
     <div class="container"> 
       <div class="row">
-        <div class="col-md-6 mb-3">
+        <div class="col-md-3 mb-3">
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">Gate pass #</span>
             <input type="label" class="form-control bg-color-white" id="tent" name="tent" value="<?php echo $details['gnumber']; ?>"  disabled >
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">tent #</span>
+            <input type="label" class="form-control bg-color-white" id="tent" name="tent" value="<?php echo $details['tent']; ?>"  disabled >
           </div>
         </div>
         <div class="col-md-6 mb-3">
@@ -74,10 +80,16 @@
             <input type="label" class="form-control bg-color-white" id="luggage" name="luggage" value="<?php echo $details['luggage']; ?>"  disabled >
           </div>
         </div>
-        <div class="col-md-6 mb-3">
+        <div class="col-md-3 mb-3">
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">adhikari</span>
             <input type="label" class="form-control bg-color-white" id="adhikari" name="adhikari" value="<?php echo $details['adhikari']; ?>"  disabled >
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">total mp</span>
+            <input type="label" class="form-control bg-color-white" id="totalmp" name="totalmp" value="<?php echo $details['totalmp']; ?>"  disabled >
           </div>
         </div>
       </div>

@@ -22,6 +22,9 @@
             <li class="nav-item <?php if(isset($type) && $type=='3') { echo 'active'; } ?>">
               <a class="nav-link" href="/Delhi/contact">Contact</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Login/out">Logout</a>
+            </li>
           </ul>
         </div>
       </div>
