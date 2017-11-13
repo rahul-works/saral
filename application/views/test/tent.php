@@ -150,7 +150,7 @@
       <div class="row padding12px">
         <div class="col-md-6 mb-3">
           <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1">adhikari name</span>
+            <span class="input-group-addon" id="basic-addon1">sewadal name</span>
             <input type="label" class="form-control bg-color-white" id="adhikari" name="adhikari" value="<?php echo $_SESSION['adhikari']; ?>" readonly>
           </div>
         </div>

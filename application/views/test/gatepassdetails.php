@@ -82,7 +82,7 @@
         </div>
         <div class="col-md-3 mb-3">
           <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1">adhikari</span>
+            <span class="input-group-addon" id="basic-addon1">sewadal</span>
             <input type="label" class="form-control bg-color-white" id="adhikari" name="adhikari" value="<?php echo $details['adhikari']; ?>"  disabled >
           </div>
         </div>
