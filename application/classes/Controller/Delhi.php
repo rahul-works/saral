@@ -82,21 +82,30 @@ class Controller_Delhi extends Controller {
         if($this->check_login()){
             $text_m    =	new Model_Test;
             $id = $_POST['passno'];
-            $details = $text_m->check_tent($id);
-            if(isset($details[0])){
-                $details[0]['gnumber'] = $details[0]['id'];
-                $this->response->body(View::factory('test/gatepassdetails')
-                                            ->set('details', $details[0])
-                                            ->set('header', View::factory('test/header'))
-                                            ->set('nav_header', View::factory('test/nav_header')
-                                                                    ->set('type', "4"))
-                                            ->set('footer', View::factory('test/footer')));
+            $data = explode("-",$id);
+            if(isset($data[0]) && isset($data[1])){
+                $details = $text_m->check_tent($data[1]);
+                if(isset($details[0])){
+                    $details[0]['gnumber'] = $details[0]['id'];
+                    $this->response->body(View::factory('test/gatepassdetails')
+                                                ->set('details', $details[0])
+                                                ->set('header', View::factory('test/header'))
+                                                ->set('nav_header', View::factory('test/nav_header')
+                                                                        ->set('type', "4"))
+                                                ->set('footer', View::factory('test/footer')));
+                } else {
+                    $this->response->body(View::factory('test/gatepassdetails')
+                                                ->set('details', $details[0])
+                                                ->set('header', View::factory('test/header'))
+                                                ->set('nav_header', View::factory('test/nav_header')
+                                                                        ->set('type', "5"))
+                                                ->set('footer', View::factory('test/footer')));
+                }
             } else {
-                $this->response->body(View::factory('test/gatepassdetails')
-                                            ->set('details', $details[0])
+                $this->response->body(View::factory('test/checktent')
                                             ->set('header', View::factory('test/header'))
                                             ->set('nav_header', View::factory('test/nav_header')
-                                                                    ->set('type', "5"))
+                                                                    ->set('type', "6"))
                                             ->set('footer', View::factory('test/footer')));
             }
         }

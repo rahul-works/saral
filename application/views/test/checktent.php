@@ -10,7 +10,7 @@
         <div class="col-md-6 mb-3">
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">@</span>
-            <input type="text" class="form-control" id="passno" placeholder="Gate Pass #" name="passno" value="" pattern="[0-9]+" required>
+            <input type="text" class="form-control" id="passno" placeholder="Gate Pass #" name="passno" value="" pattern="[-0-9]+" required>
           </div>
         </div>
       </div>

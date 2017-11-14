@@ -43,6 +43,8 @@
             <h4 style="color: green;">Gate pass details</h4>
         <?php } else if(isset($type) && $type=='5') { ?>
             <h4 style="color: red;">No gate pass details found</h4>
+        <?php } else if(isset($type) && $type=='6') { ?>
+            <h5 style="color: orange;">Please check gate pass format <b>tent#-id#</b></h5>
         <?php } ?>
     </div>
 </div>
