@@ -10,29 +10,17 @@ class Controller_Welcome extends Controller {
 	}
     
     public function action_smstest(){
-        // Account details
-        $apiKey = urlencode('ITvS+URI3aw-boRpjOSIMoOnF8uc5BfY2LfXmZoxQF');
-
-        // Message details
-        $numbers = array(919481704975);
-        $sender = urlencode('TXTLCL');
-        $message = rawurlencode('This is your message- yeah kabira manena');
-
-        $numbers = implode(',', $numbers);
-
-        // Prepare data for POST request
-        $data = array('apikey' => $apiKey, 'numbers' => $numbers, "sender" => $sender, "message" => $message);
-
-        // Send the POST request with cURL
-        $ch = curl_init('https://api.textlocal.in/send/');
-        curl_setopt($ch, CURLOPT_POST, true);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        $response = curl_exec($ch);
-        curl_close($ch);
-
         // Process your response here
-        echo $response; die;
+        $response='{"balance":8,"batch_id":322728380,"cost":1,"num_messages":1,"message":{"num_parts":1,"sender":"TXTLCL","content":"This is your message- yeah kabira manena"},"receipt_url":"","custom":"","messages":[{"id":"1247649252","recipient":919481704975}],"status":"success"}'; 
+        
+        $json_o = json_decode($response);
+        
+        echo $json_o->batch_id; 
+        echo $json_o->status; 
+        echo $json_o->messages[0]->id; 
+        echo $json_o->balance; 
+        var_dump($json_o);
+        die;
     }
     
     
