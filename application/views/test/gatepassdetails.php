@@ -68,8 +68,8 @@
         </div>
         <div class="col-md-3 mb-3">
           <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1">unit</span>
-              <input type="label" class="form-control bg-color-white" id="unit" name="unit" value="<?php echo $details['unit']; ?>"  disabled >
+            <span class="input-group-addon" id="basic-addon1">total mp</span>
+            <input type="label" class="form-control bg-color-white" id="totalmp" name="totalmp" value="<?php echo $details['totalmp']; ?>"  disabled >
           </div>
         </div>
       </div>
@@ -82,14 +82,14 @@
         </div>
         <div class="col-md-3 mb-3">
           <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1">sewadal</span>
+            <span class="input-group-addon aliceblue" id="basic-addon1">sewadal</span>
             <input type="label" class="form-control bg-color-white" id="adhikari" name="adhikari" value="<?php echo $details['adhikari']; ?>"  disabled >
           </div>
         </div>
         <div class="col-md-3 mb-3">
           <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1">total mp</span>
-            <input type="label" class="form-control bg-color-white" id="totalmp" name="totalmp" value="<?php echo $details['totalmp']; ?>"  disabled >
+            <span class="input-group-addon aliceblue" id="basic-addon1">unit</span>
+              <input type="label" class="form-control bg-color-white" id="unit" name="unit" value="<?php echo $details['unit']; ?>"  disabled >
           </div>
         </div>
       </div>
